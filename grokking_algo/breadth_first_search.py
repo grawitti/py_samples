@@ -31,7 +31,5 @@ graph["Peggy"] = []
 graph["Thom"] = []
 graph["Jonny"] = []
 
-# Define search queue
-
 if (not breadth_search("You")):
     print("Mango sellers not found")
