@@ -15,10 +15,6 @@ graph["b"]["a"] = 3
 graph["b"]["fin"] = 5
 graph["fin"] = {}
 
-print(graph["start"].keys())
-print(graph["start"]["a"])
-print(graph["start"]["b"])
-
 # Создаём хэш-таблицу для стоимости обмена
 infinity = float("inf")
 costs = {}
@@ -60,6 +56,7 @@ while node is not None: # Шаг 3, Повтрять для всех узлов
     processed.append(node) # Шаг 4 вычисление итогового пути
     node = find_lowest_cost_node(costs)
 
-print(parents) # Шаг 4
+print("Итоговый путь: ", parents)
+print("Стоимость пути до fin: ", costs["fin"])
 
 
